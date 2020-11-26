@@ -1,0 +1,41 @@
+Serial #:	Operator: 	Time: 	Lot #: 	Name	Margin	Unit	Result	Tolerance	Limits
+S/N 13	Rick	7/22/2020 10:22:14 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 13	Rick	7/22/2020 10:22:14 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 13	Rick	7/22/2020 10:22:14 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 13	Rick	7/22/2020 10:22:14 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 13	Rick	7/22/2020 10:22:14 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits
+S/N 14	Rick	7/22/2020 10:22:16 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 14	Rick	7/22/2020 10:22:16 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 14	Rick	7/22/2020 10:22:16 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 14	Rick	7/22/2020 10:22:16 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 14	Rick	7/22/2020 10:22:16 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits
+S/N 15	Rick	7/22/2020 10:22:18 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 15	Rick	7/22/2020 10:22:18 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 15	Rick	7/22/2020 10:22:18 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 15	Rick	7/22/2020 10:22:18 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 15	Rick	7/22/2020 10:22:18 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits
+S/N 16	Rick	7/22/2020 10:22:20 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 16	Rick	7/22/2020 10:22:20 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 16	Rick	7/22/2020 10:22:20 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 16	Rick	7/22/2020 10:22:20 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 16	Rick	7/22/2020 10:22:20 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits
+S/N 17	Rick	7/22/2020 10:22:22 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 17	Rick	7/22/2020 10:22:22 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 17	Rick	7/22/2020 10:22:22 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 17	Rick	7/22/2020 10:22:22 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 17	Rick	7/22/2020 10:22:22 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits
+S/N 18	Rick	7/22/2020 10:22:24 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 18	Rick	7/22/2020 10:22:24 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 18	Rick	7/22/2020 10:22:24 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 18	Rick	7/22/2020 10:22:24 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 18	Rick	7/22/2020 10:22:24 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits
+S/N 19	Rick	7/22/2020 10:22:27 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 19	Rick	7/22/2020 10:22:27 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 19	Rick	7/22/2020 10:22:27 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 19	Rick	7/22/2020 10:22:27 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 19	Rick	7/22/2020 10:22:27 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits
+S/N 20	Rick	7/22/2020 10:22:29 AM	P/N #12345	Ave Sensitivity	95.50	dB	PASS	Max/Min	100.0/90.0
+S/N 20	Rick	7/22/2020 10:22:29 AM	P/N #12345	Polarity	90.00	deg.	PASS	Tolerance curves	Individual Pts.
+S/N 20	Rick	7/22/2020 10:22:29 AM	P/N #12345	Response margin	3.00	dB	PASS	Tolerance curves	Floating Limits
+S/N 20	Rick	7/22/2020 10:22:29 AM	P/N #12345	THD margin	2.00	%	PASS	Tolerance curves	Absolute Limits
+S/N 20	Rick	7/22/2020 10:22:29 AM	P/N #12345	Rub & Buzz margin	0.10	%	PASS	Tolerance curves	Absolute Limits

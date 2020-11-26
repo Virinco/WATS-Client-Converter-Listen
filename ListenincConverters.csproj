@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87591945-3D1A-4839-9C05-332AF11DC29A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ListenincConverters</RootNamespace>
+    <AssemblyName>ListenincConverters</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Virinco.WATS.Converters.Standard, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Converters.Standard.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.Interface.MES, Version=5.1.0.159, Culture=neutral, PublicKeyToken=25abfe255fd31fdf, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Interface.MES.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.Interface.TDM, Version=5.1.0.159, Culture=neutral, PublicKeyToken=25abfe255fd31fdf, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Interface.TDM.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.Service.MES.Contract, Version=5.1.0.159, Culture=neutral, PublicKeyToken=3e36107bb2aa2c24, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.Service.MES.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Virinco.WATS.WATS-Core, Version=5.1.0.159, Culture=neutral, PublicKeyToken=40e2cae0ae7be54b, processorArchitecture=MSIL">
+      <HintPath>packages\WATS.Client.5.1.159\lib\net35\Virinco.WATS.WATS-Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConverterTests.cs" />
+    <Compile Include="SoundCheckConverter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Examples\Complete test 7-22-2020 %28002%29.txt" />
+    <Content Include="Examples\WATS18 11-2-2020.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
