@@ -15,7 +15,7 @@ namespace ListenincConverters
             parameters = new Dictionary<string, string>()
             {
                 {"partRevision","1.0" },
-                {"operationTypeCode","700" },
+                {"operationTypeCode","10" },
                 {"operator","oper" },
                 {"sequenceName","SoundCheckSeq" },
                 {"sequenceVersion","1.0.0" },
