@@ -41,13 +41,40 @@ We're open to suggestions! Feel free open an issue or create a pull request.
 
 Please read [Contributing](CONTRIBUTING.md) for details on contributions.
 
+## SoundCheck
+
+### Step 1
+The first step to using SoundCheck and WATS together is to add one or more **AutoSave to Text - Append** steps as in the sequence below.  These steps do the real work of saving SoundCheck data in a format that is recognized by the WATS SoundCheck converter.
+
+![AutoSave Step](images/AutoSave%20Step.PNG)
+
+### Step 2
+Next, you will configure the **AutoSave to Text** steps to store the desired data.  Note that each SoundCheck AutoSave steps can only save one type of data (i.e., Data, Results, and Waveforms).  If you want to store both **Data** and **Results** you will need two **AutoSave to Text** steps as in the sequence above.  Note, the SoundCheck WATS converter does not support waveforms at this time.
+
+Each **AutoSave to Text** step needs to be configured to save the **Time**, **Lot No.**, and **Serial No.** as shown below.  To store **Results** (e.g., single values), select the **Results** radio button above and choose the results that you want saved by selecting their names in the **Results** listbox.
+
+![AutoSave Configure](images/AutoSave%20Results.PNG)
+
+To save **Data** (e.g., curves) select the **Data** radio button and choose the data curves from the **Data** listbox as shown below:
+
+![AutoSave Data](images/AutoSave%20Data.PNG)
+
+### Step 3
+At this point, you are ready to run the sequence and collect data.  Unless you change the default configuration, your data file will be stored in the ***$SoundCheckRoot*\data** folder where *$SoundCheckRoot* is the folder where SoundCheck is installed; in the above images, the file will be stored in **C:\SoundCheck 18\data**.
+
+### Step 4
+After running your sequence and saving data, you'll need to move the data file to the WATS SoundCheck converter input path folder as configured in the converter configuration.  In the configuration shown below, the WATS SoundCheck converter input path is ***C:\ProgramData\Virinco\WATS***:
+
+![Converter Config](images/Converter Config.PNG)
+
 ## Contact
 
 * Issues with the converter or suggestions for improvements can be submitted as an issue here on GitHub.
 * Ask questions about WATS in the [WATS Community Help](https://virinco.zendesk.com/hc/en-us/community/topics/200229613)
 * Suggestions for the WATS Client itself or WATS in general can be submitted to the [WATS Idea Exchange](https://virinco.zendesk.com/hc/en-us/community/topics/200229623)
 * Sensitive installation issues or other sensitive questions can be sent to [support@virinco.com](mailto://support@virinco.com)
+* Questions on using WATS with SoundCheck can be sent to [support@listeninc.com](mailto://support@listeninc.com)
 
 ## License
 
-This project is licensed under the [LGPLv3](COPYING.LESSER) which is an extention of the [GPLv3](COPYING).
+This project is licensed under the [LGPLv3](COPYING.LESSER) which is an extension of the [GPLv3](COPYING).
