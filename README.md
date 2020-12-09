@@ -49,7 +49,7 @@ The first step to using SoundCheck and WATS together is to add one or more **Aut
 ![AutoSave Step](images/AutoSave%20Step.PNG)
 
 ### Step 2
-Next, you will configure the **AutoSave to Text** steps to store the desired data.  Note that each SoundCheck AutoSave steps can only save one type of data (i.e., Data, Results, and Waveforms).  If you want to store both **Data** and **Results** you will need two **AutoSave to Text** steps as in the sequence above.  Note, the SoundCheck WATS converter does not support waveforms at this time.
+Next, you will configure the **AutoSave to Text** step to store the desired data.  Note that each SoundCheck AutoSave step can only save one type of data (i.e., Data, Results, and Waveforms).  If you want to store both **Data** and **Results** you will need two **AutoSave to Text** steps as in the sequence above.  Note, the SoundCheck WATS converter does not support waveforms at this time.
 
 Each **AutoSave to Text** step needs to be configured to save the **Time**, **Lot No.**, and **Serial No.** as shown below.  To store **Results** (e.g., single values), select the **Results** radio button above and choose the results that you want saved by selecting their names in the **Results** listbox.
 
@@ -65,7 +65,7 @@ At this point, you are ready to run the sequence and collect data.  Unless you c
 ### Step 4
 After running your sequence and saving data, you'll need to move the data file to the WATS SoundCheck converter input path folder as configured in the converter configuration.  In the configuration shown below, the WATS SoundCheck converter input path is ***C:\ProgramData\Virinco\WATS***:
 
-![Converter Config](images/Converter Config.PNG)
+![Converter Config](images/Converter%20Config.PNG)
 
 ## Contact
 
