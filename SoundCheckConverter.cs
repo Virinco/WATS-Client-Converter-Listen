@@ -70,7 +70,7 @@ namespace ListenincConverters
         {
             List<double> values = new List<double>();
             for (int i = 3; i < columns.Length; i++)
-                values.Add(double.Parse(columns[i], CultureInfo.CurrentUICulture));
+                values.Add(double.Parse(columns[i], CultureInfo.InvariantCulture));
             if (xValues == null)
             {
                 xValues = values.ToArray();
@@ -112,11 +112,7 @@ namespace ListenincConverters
                 cols[2], parameters["partRevision"], 
                 sn, parameters["operationTypeCode"], 
                 parameters["sequenceName"], parameters["sequenceVersion"]);
-            try {
-                uut.StartDateTime = DateTime.ParseExact(cols[1], "M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture); //11/2/2020 4:36:07 PM
-            } catch (System.FormatException) {
-                uut.StartDateTime = DateTime.ParseExact(cols[1], "M-d-yyyy h:mm:ss", CultureInfo.InvariantCulture);
-            }
+            uut.StartDateTime = DateTime.ParseExact(cols[1], "M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture); //11/2/2020 4:36:07 PM
             return uut;
         }
 
