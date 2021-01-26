@@ -23,6 +23,7 @@ This converter uses the following parameters:
 | sequenceName      | MainSequence  | If log is missing sequence name, use this one.                 |
 | sequenceVersion   | 1.0.0         | If log is missing sequence version, use this one.              |
 | operationTypeCode | 10            | If log is missing operation code (process code), use this one. |
+| cultureCode       | en-US         | Which culture to parse numbers and dates with.                 |
 
 ## Testing
 
