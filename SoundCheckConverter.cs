@@ -22,7 +22,7 @@ namespace ListenincConverters
                 { "operator", "oper" },
                 { "sequenceName", "SoundCheckSeq" },
                 { "sequenceVersion", "1.0.0" },
-                { "cultureCode", "nb-NO" }
+                { "cultureCode", "en-US" }
             };
         }
 
