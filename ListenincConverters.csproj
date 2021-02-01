@@ -63,10 +63,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Examples\Complete test 7-22-2020 %28002%29.txt">
+    <Content Include="Examples\US\Complete test 7-22-2020 %28002%29.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Examples\WATS18 11-2-2020.txt">
+    <Content Include="Examples\EU\Data logging example 12-01-2021.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\US\WATS18 11-2-2020.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

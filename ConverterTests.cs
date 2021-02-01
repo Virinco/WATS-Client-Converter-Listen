@@ -24,7 +24,7 @@ namespace ListenincConverters
         {
             InitializeAPI(true);
             SoundCheckConverter converter = new SoundCheckConverter();
-            using (FileStream file = new FileStream("Examples\\WATS18 11-2-2020.txt", FileMode.Open))
+            using (FileStream file = new FileStream("Examples\\US\\WATS18 11-2-2020.txt", FileMode.Open))
             {
                 Report uut = converter.ImportReport(this, file);
                 Submit(uut);

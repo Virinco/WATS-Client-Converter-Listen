@@ -23,6 +23,7 @@ This converter uses the following parameters:
 | operator          | oper          | If log is missing a operator, use this one.                    |
 | sequenceName      | SoundCheckSeq | If log is missing sequence name, use this one.                 |
 | sequenceVersion   | 1.0.0         | If log is missing sequence version, use this one.              |
+| cultureCode       | en-US         | Which culture to parse numbers and dates with.                 |
 
 ## Testing
 

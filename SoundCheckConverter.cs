@@ -9,17 +9,27 @@ namespace ListenincConverters
 {
     public class SoundCheckConverter : IReportConverter_v2
     {
-        Dictionary<string, string> parameters;
+        private readonly Dictionary<string, string> parameters;
+
+        private CultureInfo cultureInfo;
+
         public SoundCheckConverter() : base()
         {
             parameters = new Dictionary<string, string>()
             {
-                {"partRevision","1.0" },
-                {"operationTypeCode","10" },
-                {"operator","oper" },
-                {"sequenceName","SoundCheckSeq" },
-                {"sequenceVersion","1.0.0" },
+                { "partRevision", "1.0" },
+                { "operationTypeCode", "700" },
+                { "operator", "oper" },
+                { "sequenceName", "SoundCheckSeq" },
+                { "sequenceVersion", "1.0.0" },
+                { "cultureCode", "en-US" }
             };
+        }
+
+        public SoundCheckConverter(IDictionary<string, string> parameters) : this()
+        {
+            foreach (var parameter in parameters)            
+                this.parameters[parameter.Key] = parameter.Value;
         }
 
         public Dictionary<string, string> ConverterParameters => parameters;
@@ -30,6 +40,8 @@ namespace ListenincConverters
 
         public Report ImportReport(TDM api, Stream file)
         {
+            cultureInfo = new CultureInfo(parameters["cultureCode"]);
+
             UUTReport unitTestReport = null;
             using (TextReader reader = new StreamReader(file))
             {
@@ -70,7 +82,11 @@ namespace ListenincConverters
         {
             List<double> values = new List<double>();
             for (int i = 3; i < columns.Length; i++)
-                values.Add(double.Parse(columns[i], CultureInfo.InvariantCulture));
+            {
+                if(!string.IsNullOrEmpty(columns[i]))
+                    values.Add(double.Parse(columns[i], cultureInfo));
+            }
+
             if (xValues == null)
             {
                 xValues = values.ToArray();
@@ -93,12 +109,12 @@ namespace ListenincConverters
         private void ReadMeasure(UUTReport unitTestReport, string[] columns)
         {
             NumericLimitStep numericLimitStep = unitTestReport.GetRootSequenceCall().AddNumericLimitStep(columns[3]);
-            double measure = double.Parse(columns[4], CultureInfo.InvariantCulture);
+            double measure = double.Parse(columns[4], cultureInfo);
             if (columns[8].Contains("/"))
             {
                 string[] lim = columns[8].Split(new char[] { '/' });
-                double lowLim = double.Parse(lim[1], CultureInfo.InvariantCulture);
-                double hiLim = double.Parse(lim[0], CultureInfo.InvariantCulture);
+                double lowLim = double.Parse(lim[1], cultureInfo);
+                double hiLim = double.Parse(lim[0], cultureInfo);
                 numericLimitStep.AddTest(measure, CompOperatorType.GELE, lowLim, hiLim, columns[5]);
             }
             else
@@ -112,7 +128,7 @@ namespace ListenincConverters
                 cols[2], parameters["partRevision"], 
                 sn, parameters["operationTypeCode"], 
                 parameters["sequenceName"], parameters["sequenceVersion"]);
-            uut.StartDateTime = DateTime.ParseExact(cols[1], "M/d/yyyy h:mm:ss tt", CultureInfo.InvariantCulture); //11/2/2020 4:36:07 PM
+            uut.StartDateTime = DateTime.Parse(cols[1], cultureInfo);
             return uut;
         }
 
