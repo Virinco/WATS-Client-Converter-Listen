@@ -18,11 +18,11 @@ This converter uses the following parameters:
 
 | Parameter         | Default value | Description                                                    |
 |-------------------|---------------|----------------------------------------------------------------|
-| partNumber        | ABC123        | If log is missing a part number, use this one.                 |
 | partRevision      | 1.0           | If log is missing a revision, use this one.                    |
-| sequenceName      | MainSequence  | If log is missing sequence name, use this one.                 |
-| sequenceVersion   | 1.0.0         | If log is missing sequence version, use this one.              |
 | operationTypeCode | 10            | If log is missing operation code (process code), use this one. |
+| operator          | oper          | If log is missing a operator, use this one.                    |
+| sequenceName      | SoundCheckSeq | If log is missing sequence name, use this one.                 |
+| sequenceVersion   | 1.0.0         | If log is missing sequence version, use this one.              |
 | cultureCode       | en-US         | Which culture to parse numbers and dates with.                 |
 
 ## Testing
