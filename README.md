@@ -64,7 +64,7 @@ To save **Data** (e.g., curves) select the **Data** radio button and choose the 
 At this point, you are ready to run the sequence and collect data.  Unless you change the default configuration, your data file will be stored in the ***$SoundCheckRoot*\data** folder where *$SoundCheckRoot* is the folder where SoundCheck is installed; in the above images, the file will be stored in **C:\SoundCheck 18\data**.
 
 ### Step 4
-After running your sequence and saving data, you'll need to move the data file to the WATS SoundCheck converter input path folder as configured in the converter configuration.  In the configuration shown below, the WATS SoundCheck converter input path is ***C:\ProgramData\Virinco\WATS***:
+After running your sequence and saving data, you'll need to move the data file to the WATS SoundCheck converter input path folder as configured in the converter configuration.  In the configuration shown below, the WATS SoundCheck converter input path is ***C:\ProgramData\Virinco\WATS\SoundCheck***:
 
 ![Converter Config](images/Converter%20Config.PNG)
 
